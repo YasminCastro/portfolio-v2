@@ -9,7 +9,21 @@ const config: Config = {
     "./public/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lightBlue: {
+          100: "#CBF2FF",
+          200: "#9AE2FF",
+          300: "#64D2FF",
+          400: "#3CC5FE",
+          500: "#23BCFE",
+          600: "#09B8FF",
+          700: "#00A1E4",
+          800: "#0090CD",
+          900: "#007CB5",
+        },
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
 };

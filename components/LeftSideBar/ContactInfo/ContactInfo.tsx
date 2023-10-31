@@ -1,20 +1,33 @@
 import { Avatar } from "flowbite-react";
-import { BsLinkedin } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+import { BiLogoLinkedin } from "react-icons/bi";
 
 const ContactInfo = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center space-y-3">
       <Avatar
-        alt="avatar of Jese"
+        alt="avatar of Yasmin Castro"
         img="https://avatars.githubusercontent.com/u/62770317"
         rounded
+        size="lg"
       />
-      <h1 className="text-xl font-bold mb-2">Yasmin Castro</h1>
-      <h2 className="text-lg mb-6">Full-Stack Developer</h2>
-      <div className="flex gap-3">
-        <BsLinkedin />
-        <AiOutlineMail />
+      <h1 className="text-xl font-bold">Yasmin Castro</h1>
+      <h2 className="text-lg mb-4 text-gray-600">Full-Stack Developer</h2>
+      <div className="flex gap-4">
+        <a
+          href="https://www.linkedin.com/in/yasmin-sdcastro/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-lightBlue-600 p-2 rounded-full hover:bg-lightBlue-700"
+        >
+          <BiLogoLinkedin className="text-lg" />
+        </a>
+        <a
+          href="mailto:yasminsdcastro@gmail.com"
+          className="bg-lightBlue-600 p-2 rounded-full hover:bg-lightBlue-700"
+        >
+          <AiOutlineMail className="text-lg" />
+        </a>
       </div>
     </div>
   );
