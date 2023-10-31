@@ -2,6 +2,7 @@ import React from "react";
 import ContactInfo from "./ContactInfo/ContactInfo";
 import PersonalInfo from "./PersonalInfo/PersonalInfo";
 import Languages from "./Languages/Languages";
+import Skills from "./Skills/Skills";
 
 const LeftSidebar = () => {
   return (
@@ -9,6 +10,7 @@ const LeftSidebar = () => {
       <ContactInfo />
       <PersonalInfo />
       <Languages />
+      <Skills />
     </div>
   );
 };

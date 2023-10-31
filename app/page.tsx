@@ -6,7 +6,7 @@ import RightSidebar from "@/components/RightSideBar/SideBar";
 
 export default function Home() {
   return (
-    <main className="flex h-screen">
+    <main className="flex">
       <div className="w-72 bg-white shadow-lg">
         <LeftSidebar />
       </div>
