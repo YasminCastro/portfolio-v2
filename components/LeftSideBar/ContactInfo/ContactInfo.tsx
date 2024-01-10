@@ -5,15 +5,15 @@ import { FiGithub } from "react-icons/fi";
 
 const ContactInfo = () => {
   return (
-    <div className="flex flex-col items-center space-y-3 mb-6">
+    <div className="flex flex-col items-center space-y-1 mb-6">
       <Avatar
         alt="avatar of Yasmin Castro"
         img="https://avatars.githubusercontent.com/u/62770317"
         rounded
         size="lg"
       />
-      <h1 className="text-xl font-bold">Yasmin Castro</h1>
-      <h2 className="text-lg mb-4 text-gray-600">Full-Stack Developer</h2>
+      <h1 className="text-lg font-bold">Yasmin Castro</h1>
+      <h2 className="text-lg  text-gray-600">Full-Stack Developer</h2>
       <div className="flex gap-4">
         <a
           href="https://www.linkedin.com/in/yasmin-sdcastro/"
