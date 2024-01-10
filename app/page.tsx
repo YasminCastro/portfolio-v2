@@ -6,14 +6,14 @@ import RightSidebar from "@/components/RightSideBar/SideBar";
 
 export default function Home() {
   return (
-    <main className="flex">
-      <div className="w-72 bg-white shadow-lg">
+    <main className="flex bg-accent ">
+      <div className="w-72 bg-card shadow-lg">
         <LeftSidebar />
       </div>
       <div className="flex-grow m-8">
         <MainSection />
       </div>
-      <div className="w-72 bg-white shadow-lg">
+      <div className="w-72 bg-card shadow-lg">
         <RightSidebar />
       </div>
     </main>
