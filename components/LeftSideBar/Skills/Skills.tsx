@@ -6,6 +6,7 @@ const Skills = () => {
       <h2 className="font-bold text-lg">Skills</h2>
       <div className="space-y-4 my-3">
         <SkillProgess skill="TypeScript/JavaScript" value={90} />
+        <SkillProgess skill="Node.js" value={85} />
         <SkillProgess skill="React.js" value={70} />
         <SkillProgess skill="Angular.js" value={60} />
         <SkillProgess skill="React Native" value={50} />
