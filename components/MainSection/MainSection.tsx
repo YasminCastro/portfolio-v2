@@ -4,7 +4,7 @@ import EducationSection from "./Education/Education";
 
 const MainSection = () => {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 max-w-full">
       <HeroSection />
       <EducationSection />
     </div>

@@ -6,6 +6,7 @@ const OtherSkills = () => {
       <h2 className="font-bold text-lg">Outras Skills</h2>
       <div className="space-y-4 my-3">
         <Skill skill="Git" />
+        <Skill skill="Express.js" />
         <Skill skill="Docker" />
         <Skill skill="Next.js" />
       </div>
