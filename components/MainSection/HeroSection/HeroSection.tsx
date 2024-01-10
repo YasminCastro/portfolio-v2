@@ -5,13 +5,13 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <div className="bg-white shadow-lg rounded-xl py-3 px-16 flex items-center justify-between">
-      <div className="space-y-3 max-w-xl">
-        <h2 className="font-bold text-4xl">
+      <div className="space-y-3">
+        <h1 className="font-bold text-4xl">
           Eu sou a Yasmin, <br /> Desenvolvedora{" "}
           <a className="text-primary">Full-Stack</a>
-        </h2>
+        </h1>
 
-        <p className="w-2/3">
+        <p className="w-2/3 max-w-xl">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
           dignissimos accusantium odit aperiam, dolor soluta dolorem?
         </p>
