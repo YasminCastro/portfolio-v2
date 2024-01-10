@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="bg-white shadow-lg mb-32">
+    <div className="bg-white shadow-lg">
       <div>HERO SECTION</div>
     </div>
   );
