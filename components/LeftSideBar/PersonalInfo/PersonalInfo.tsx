@@ -1,6 +1,6 @@
 const PersonalInfo = () => {
   return (
-    <div className="flex flex-col items-center space-y-3 border-t-2 border-gray-200 py-4">
+    <div className="flex flex-col items-center space-y-3 py-4">
       <PersonalCard title="Endereço" description="Goiânia - GO" />
     </div>
   );

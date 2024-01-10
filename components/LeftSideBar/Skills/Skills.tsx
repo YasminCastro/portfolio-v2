@@ -2,7 +2,7 @@ import { Progress } from "@/components/ui/progress";
 
 const Skills = () => {
   return (
-    <div className="border-t-2 border-gray-200 py-3">
+    <div className="py-3">
       <h2 className="font-bold text-lg">Skills</h2>
       <div className="space-y-4 my-3">
         <SkillProgess skill="TypeScript/JavaScript" value={90} />

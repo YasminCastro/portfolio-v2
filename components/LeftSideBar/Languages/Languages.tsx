@@ -2,7 +2,7 @@ import { Progress } from "@/components/ui/progress";
 
 const Languages = () => {
   return (
-    <div className="border-t-2 border-gray-200 py-3">
+    <div className=" py-3">
       <h2 className="font-bold text-lg">Idiomas</h2>
       <div className="space-y-4 my-3">
         <LanguageProgess languageName="Português" value={100} />

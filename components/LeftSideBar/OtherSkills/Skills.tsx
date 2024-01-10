@@ -2,7 +2,7 @@ import { MdOutlineFiberSmartRecord } from "react-icons/md";
 
 const OtherSkills = () => {
   return (
-    <div className="border-t-2 border-gray-200 py-3">
+    <div className="py-3">
       <h2 className="font-bold text-lg">Outras Skills</h2>
       <div className="space-y-4 my-3">
         <Skill skill="Git" />
