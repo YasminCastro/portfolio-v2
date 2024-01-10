@@ -2,18 +2,22 @@ import { Badge } from "@/components/ui/badge";
 
 const EducationSection = () => {
   return (
-    <div className=" bg-white shadow-lg rounded-xl p-16">
-      <h2 className="font-bold text-3xl w-fit">Educação</h2>
-      <div className="space-y-3 mt-10">
-        <Institution
-          institution="Instituto Federal de Goiás"
-          date="2020 - presente"
-          name="Bacharelado em Sistemas de Informação"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+    <div className="space-y-8">
+      <div className="flex justify-center">
+        <h2 className="font-bold text-3xl">Formação acadêmica</h2>
+      </div>
+      <div className=" bg-white  rounded-xl p-16">
+        <div className="space-y-3">
+          <Institution
+            institution="Instituto Federal de Goiás"
+            date="2020 - presente"
+            name="Bacharelado em Sistemas de Informação"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
           rerum, odit voluptate, suscipit fugiat sapiente debitis officiis
           tempora nemo aliquid voluptatum possimus! Enim saepe, voluptatibus
           adipisci sed possimus nesciunt unde."
-        />
+          />
+        </div>
       </div>
     </div>
   );
