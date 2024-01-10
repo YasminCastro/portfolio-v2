@@ -2,9 +2,9 @@ import { Progress } from "@/components/ui/progress";
 
 const Languages = () => {
   return (
-    <div className="border-t-2 border-gray-200 py-4">
+    <div className="border-t-2 border-gray-200 py-3">
       <h2 className="font-bold text-lg">Idiomas</h2>
-      <div className="space-y-4 my-4">
+      <div className="space-y-4 my-3">
         <LanguageProgess languageName="Português" value={100} />
         <LanguageProgess languageName="Inglês" value={80} />
       </div>
@@ -23,7 +23,7 @@ const LanguageProgess = ({ languageName, value }: ILanguageProgress) => {
   return (
     <div>
       <p>{languageName}</p>
-      <Progress value={value} className="h-2" />
+      <Progress value={value} className="h-1" />
     </div>
   );
 };

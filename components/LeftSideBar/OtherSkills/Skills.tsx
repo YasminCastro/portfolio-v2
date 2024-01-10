@@ -2,16 +2,28 @@ import { MdOutlineFiberSmartRecord } from "react-icons/md";
 
 const OtherSkills = () => {
   return (
-    <div className="border-t-2 border-gray-200 py-6">
-      <h2 className="font-bold text-xl">Outras Skills</h2>
-      <div className="space-y-4 my-6">
-        <div className="flex items-center w-full space-x-2 ">
-          <MdOutlineFiberSmartRecord className="bg-lightBlue-500" />
-          <p>Goiânia - GO</p>
-        </div>
+    <div className="border-t-2 border-gray-200 py-3">
+      <h2 className="font-bold text-lg">Outras Skills</h2>
+      <div className="space-y-4 my-3">
+        <Skill skill="Git" />
+        <Skill skill="Docker" />
+        <Skill skill="Next.js" />
       </div>
     </div>
   );
 };
 
 export default OtherSkills;
+
+interface ISkill {
+  skill: string;
+}
+
+const Skill = ({ skill }: ISkill) => {
+  return (
+    <div className="flex items-center w-full space-x-2 ">
+      <MdOutlineFiberSmartRecord className="text-primary" />
+      <p>{skill}</p>
+    </div>
+  );
+};
