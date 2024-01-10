@@ -16,8 +16,10 @@ interface IPersonalCard {
 const PersonalCard = ({ title, description }: IPersonalCard) => {
   return (
     <div className="flex justify-between items-center w-full">
-      <p className="bg-primary px-2 rounded-md text-secondary">{title}:</p>
-      <p>{description}</p>
+      <p className="bg-primary px-2 rounded-md text-secondary text-sm">
+        {title}:
+      </p>
+      <p className="text-sm">{description}</p>
     </div>
   );
 };
