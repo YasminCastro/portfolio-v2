@@ -1,6 +1,15 @@
-import { Badge } from "@/components/ui/badge";
+import { compareDesc } from "date-fns";
+import workExperience from "@/config/workExperience";
+import ExperienceSection from "./ExperienceSection";
+import { Separator } from "@/components/ui/separator";
 
 const WorkSection = () => {
+  const experienceASC = workExperience.sort((a, b) => {
+    const [mesA, anoA] = a.startDate.split("/").map(Number);
+    const [mesB, anoB] = b.startDate.split("/").map(Number);
+    return compareDesc(new Date(anoA, mesA - 1), new Date(anoB, mesB - 1));
+  });
+
   return (
     <div className="space-y-8">
       <div className="flex justify-center">
@@ -8,45 +17,15 @@ const WorkSection = () => {
       </div>
       <div className=" bg-white  rounded-xl p-16">
         <div className="space-y-3">
-          <Institution
-            institution="Instituto Federal de Goiás"
-            date="2020 - presente"
-            name="Bacharelado em Sistemas de Informação"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          rerum, odit voluptate, suscipit fugiat sapiente debitis officiis
-          tempora nemo aliquid voluptatum possimus! Enim saepe, voluptatibus
-          adipisci sed possimus nesciunt unde."
-          />
+          {experienceASC.map((experience, index) => {
+            return (
+              <div key={`experience-${index}`}>
+                {index === 0 ? null : <Separator />}
+                <ExperienceSection experience={experience} />
+              </div>
+            );
+          })}
         </div>
-      </div>
-    </div>
-  );
-};
-
-interface IInstitution {
-  institution: string;
-  date: string;
-  name: string;
-  description: string;
-}
-
-const Institution = ({
-  institution,
-  date,
-  name,
-  description,
-}: IInstitution) => {
-  return (
-    <div className="flex justify-between w-full">
-      <div className="space-y-2">
-        <h3 className="font-bold text-lg">{institution}</h3>
-        <div>
-          <Badge>{date}</Badge>
-        </div>
-      </div>
-      <div className="space-y-6">
-        <p className="font-bold">{name}</p>
-        <p className="max-w-lg">{description}</p>
       </div>
     </div>
   );
