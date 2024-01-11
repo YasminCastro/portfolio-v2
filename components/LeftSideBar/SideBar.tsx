@@ -5,6 +5,7 @@ import Languages from "./Languages/Languages";
 import Skills from "./Skills/Skills";
 import OtherSkills from "./OtherSkills/Skills";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 
 const LeftSidebar = () => {
   return (
@@ -18,6 +19,8 @@ const LeftSidebar = () => {
       <Skills />
       <Separator />
       <OtherSkills />
+      <Separator />
+      <Button className="w-full mt-4">Download CV</Button>
     </div>
   );
 };
