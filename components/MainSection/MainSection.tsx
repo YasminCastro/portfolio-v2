@@ -9,9 +9,9 @@ const MainSection = () => {
   return (
     <div className="max-w-full space-y-20">
       <HeroSection />
-      <EducationSection />
       <WorkSection />
       <ProjectsSection />
+      <EducationSection />
       <ContactSection />
     </div>
   );
