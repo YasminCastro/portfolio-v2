@@ -10,6 +10,21 @@ export interface IProjects {
 
 const projects: IProjects[] = [
   {
+    title: "Solar Power",
+    summary:
+      "Acompanhe a geração de energia do seu sistema fotovoltaico em tempo real.",
+    images: [
+      "/projects/solarpower/home-energetica.png",
+      "/projects/solarpower/login-hub.png",
+      "/projects/solarpower/config.png",
+    ],
+    thumbnail: "/projects/solarpower/logo.png",
+    description:
+      "O Solar Power é o resultado do nosso TCC em Sistemas de Informação no IFG, criado por Yasmin e Gabriel. A ideia nasceu da necessidade de tornar o monitoramento de energia solar mais acessível, um ponto crítico na área de energias renováveis. Percebemos que a maioria dos sistemas existentes era complexa para quem não é especialista. Assim, desenvolvemos o SolarPower, um app que simplifica o acompanhamento da energia solar de forma intuitiva e engajadora, promovendo o uso de energia sustentável com uma interface fácil de usar.",
+    link: "https://solar-power.vercel.app/about",
+    repositorio: "https://github.com/YasminCastro/solar-power",
+  },
+  {
     title: "Cervejometro",
     summary: "Divida a conta da cerveja de forma justa e fácil",
     images: [
