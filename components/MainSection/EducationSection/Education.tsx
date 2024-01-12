@@ -1,10 +1,11 @@
 import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 
 const EducationSection = () => {
   return (
     <div id="education" className="space-y-8">
       <div className="flex justify-center">
-        <h2 className="text-3xl font-bold">Formação acadêmica</h2>
+        <h2 className="text-3xl font-bold">Educação</h2>
       </div>
       <div className=" rounded-xl  bg-white p-16">
         <div className="space-y-3">
@@ -12,6 +13,16 @@ const EducationSection = () => {
             institution="Instituto Federal de Goiás"
             date="2020 - presente"
             name="Bacharelado em Sistemas de Informação"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          rerum, odit voluptate, suscipit fugiat sapiente debitis officiis
+          tempora nemo aliquid voluptatum possimus! Enim saepe, voluptatibus
+          adipisci sed possimus nesciunt unde."
+          />
+          <Separator />
+          <Institution
+            institution="New Jersey City University"
+            date="2017"
+            name="English Language and Global Leadership"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
           rerum, odit voluptate, suscipit fugiat sapiente debitis officiis
           tempora nemo aliquid voluptatum possimus! Enim saepe, voluptatibus
