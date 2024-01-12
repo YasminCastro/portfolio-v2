@@ -35,25 +35,24 @@ export function Project({ project }: Props) {
         <div className="mx-auto w-full max-w-4xl">
           <DrawerHeader>
             <DrawerTitle>
-              <a href={project.link} target="_blank" className="flex gap-1">
-                {project.title}
-                <CiShare1 />
-              </a>
+              {project.link && (
+                <a href={project.link} target="_blank" className="flex gap-1">
+                  {project.title}
+                  <CiShare1 />
+                </a>
+              )}
+              {!project.link && <p> {project.title}</p>}
             </DrawerTitle>
             <DrawerDescription>{project.summary}</DrawerDescription>
           </DrawerHeader>
           <div className="p-4 pb-0 space-x-20 flex">
             <div className="w-80 h-fit">
               <ProjectCarousel images={project.images} />
-              {/* <Image src={project.imagesPath} alt="" width={310} height={300} /> */}
             </div>
             <div className="flex flex-col gap-2">
               <p>{project.description}</p>
               <Button variant="outline" className="w-fit">
-                <a
-                  href="https://github.com/YasminCastro/cervejometro"
-                  target="_blank"
-                >
+                <a href={project.repositorio} target="_blank">
                   Github
                 </a>
               </Button>
