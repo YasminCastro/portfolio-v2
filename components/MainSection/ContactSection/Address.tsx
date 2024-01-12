@@ -6,7 +6,7 @@ const Address = () => {
       <div className="w-fit rounded-full bg-primary-foreground p-3">
         <FaMapLocationDot className="text-primary" size={30} />
       </div>
-      <div className="w-full pt-5 text-gray-600">
+      <div className="w-full space-y-1 pt-5 text-gray-600">
         <div className="flex justify-between ">
           <p className="font-bold">País:</p>
           <p>Brasil</p>

@@ -1,4 +1,5 @@
 import Address from "./Address";
+import Usernames from "./Usernames";
 
 const ContactSection = () => {
   return (
@@ -8,7 +9,7 @@ const ContactSection = () => {
       </div>
       <div className="grid grid-cols-2 place-items-center">
         <Address />
-        <Address />
+        <Usernames />
       </div>
     </div>
   );
