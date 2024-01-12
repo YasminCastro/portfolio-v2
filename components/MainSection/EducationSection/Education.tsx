@@ -2,11 +2,11 @@ import { Badge } from "@/components/ui/badge";
 
 const EducationSection = () => {
   return (
-    <div className="space-y-8">
+    <div id="education" className="space-y-8">
       <div className="flex justify-center">
-        <h2 className="font-bold text-3xl">Formação acadêmica</h2>
+        <h2 className="text-3xl font-bold">Formação acadêmica</h2>
       </div>
-      <div className=" bg-white  rounded-xl p-16">
+      <div className=" rounded-xl  bg-white p-16">
         <div className="space-y-3">
           <Institution
             institution="Instituto Federal de Goiás"
@@ -37,9 +37,9 @@ const Institution = ({
   description,
 }: IInstitution) => {
   return (
-    <div className="flex justify-between w-full">
+    <div className="flex w-full justify-between">
       <div className="space-y-2">
-        <h3 className="font-bold text-lg">{institution}</h3>
+        <h3 className="text-lg font-bold">{institution}</h3>
         <div>
           <Badge>{date}</Badge>
         </div>

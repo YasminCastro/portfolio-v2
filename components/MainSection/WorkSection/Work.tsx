@@ -11,11 +11,11 @@ const WorkSection = () => {
   });
 
   return (
-    <div className="space-y-8">
+    <div id="work" className="space-y-8">
       <div className="flex justify-center">
-        <h2 className="font-bold text-3xl">Experiência</h2>
+        <h2 className="text-3xl font-bold">Experiência</h2>
       </div>
-      <div className=" bg-white  rounded-xl p-16">
+      <div className=" rounded-xl  bg-white p-16">
         <div className="space-y-3">
           {experienceASC.map((experience, index) => {
             return (

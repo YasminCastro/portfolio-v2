@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="bg-white shadow-lg rounded-xl py-3 px-16 flex items-center justify-between">
+    <div className="flex items-center justify-between rounded-xl bg-white px-16 py-3 shadow-lg">
       <div className="space-y-3">
-        <h1 className="font-bold text-4xl">
+        <h1 className="text-4xl font-bold">
           Eu sou a Yasmin, <br /> Desenvolvedora{" "}
           <a className="text-primary">Full-Stack</a>
         </h1>
