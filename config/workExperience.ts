@@ -18,7 +18,8 @@ const experiences: IExperience[] = [
     address: "Goiânia - Brasil",
     type: "Estágio",
     skills: ["Linux", "Shell", "WordPress", "Resolução de problemas"],
-    description: "lorem ipsum dolor sit amet, consectet",
+    description:
+      "Trabalhei com atendimento ao cliente, prestando suporte técnico para clientes da empresa. Atendia ligações, resolvia pequenos ajustes em sites WordPress e encaminhava problemas mais complexos para os programadores responsáveis. Desenvolvi habilidades importantes, como a capacidade de lidar com situações estressantes e trabalhar em equipe para alcançar metas comuns.",
   },
   {
     title: "Desenvolvedora de Software Júnior",
@@ -30,6 +31,7 @@ const experiences: IExperience[] = [
     skills: [
       "TypeScript",
       "React.js",
+      "AWS",
       "StyledComponents",
       "Express.js",
       "MySQL",
@@ -37,8 +39,10 @@ const experiences: IExperience[] = [
       "Docker",
       "Puppetter",
       "Nest.js",
+      "Directus",
     ],
-    description: "lorem ipsum dolor sit amet, consectet",
+    description:
+      "Desenvolvi minhas habilidades de programação ao participar ativamente dos projetos da empresa, atendendo a uma variedade de clientes do setor de logística. Criei automações de web scraping, desenvolvi sites em React e APIs em Node.js, e elaborei CMS personalizados utilizando a biblioteca Directus. Essa experiência me permitiu aprimorar tanto minhas habilidades técnicas quanto as de trabalho em equipe, além de solucionar problemas complexos.",
   },
   {
     title: "Desenvolvedora Full-Stack",
@@ -56,7 +60,8 @@ const experiences: IExperience[] = [
       "MongoDB",
       "Ionic",
     ],
-    description: "lorem ipsum dolor sit amet, consectet",
+    description:
+      "Minha função consiste em manter e desenvolver novas funcionalidades para painéis que exibem dados analíticos obtidos a partir de vídeos dos nossos clientes, que incluem grandes empresas como Vale do Rio Doce, Rumo Logística, entre outras mineradoras e clientes de menor porte. Minhas responsabilidades abrangem o desenvolvimento de soluções robustas e escaláveis, a participação ativa em discussões técnicas tanto com a equipe de desenvolvimento quanto com os stakeholders, a identificação e correção de bugs e problemas de desempenho, além de contribuir significativamente para o processo de desenvolvimento ágil.",
   },
 ];
 

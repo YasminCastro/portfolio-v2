@@ -13,17 +13,17 @@ const ExperienceSection = ({ experience }: ExperienceSectionProps) => {
 
   return (
     <div className="flex w-full space-x-4 py-4">
-      <div className="w-1/3 flex justify-center">
+      <div className="flex w-1/3 justify-center">
         <p className="text-sm">
           {startDate} - {endDate}
         </p>
       </div>
-      <div className="w-full ml-6">
+      <div className="ml-6 w-full">
         <h3 className="font-bold">
           {experience.title} ・ {experience.company}
         </h3>
-        <p className="text-gray-500 text-sm">{experience.type}</p>
-        <p className="max-w-lg">{experience.description}</p>
+        <p className="text-sm text-gray-500">{experience.type}</p>
+        <p className="mt-2 max-w-lg text-justify">{experience.description}</p>
       </div>
       <div>
         <div className="max-w-md">
