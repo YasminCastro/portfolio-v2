@@ -1,6 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
 import { Project } from "./Project";
+import projects from "@/config/projects";
 
 const ProjectsSection = () => {
   return (
@@ -10,9 +9,9 @@ const ProjectsSection = () => {
       </div>
       <div className=" p-16">
         <div className="grid grid-cols-3 place-items-center gap-3">
-          <Project />
-          <Project />
-          <Project />
+          {projects.map((project, index) => {
+            return <Project project={project} key={`project-${index}`} />;
+          })}
         </div>
       </div>
     </div>

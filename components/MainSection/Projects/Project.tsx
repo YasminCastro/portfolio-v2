@@ -1,8 +1,7 @@
-"use client";
 import * as React from "react";
-import { Minus, Plus } from "lucide-react";
 import Image from "next/image";
 
+import { CiShare1 } from "react-icons/ci";
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
@@ -14,38 +13,49 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { IProjects } from "@/config/projects";
 
-export function Project() {
-  const [goal, setGoal] = React.useState(350);
+interface Props {
+  project: IProjects;
+}
 
-  function onClick(adjustment: number) {
-    setGoal(Math.max(200, Math.min(400, goal + adjustment)));
-  }
-
+export function Project({ project }: Props) {
   return (
     <Drawer>
       <DrawerTrigger asChild>
         <Image src="/mockup.png" alt="" width={310} height={300} />
       </DrawerTrigger>
       <DrawerContent>
-        <div className="mx-auto w-full max-w-xl">
+        <div className="mx-auto w-full max-w-3xl">
           <DrawerHeader>
-            <DrawerTitle>Cervejometro</DrawerTitle>
-            <DrawerDescription>Calcular a conta da cerveja</DrawerDescription>
+            <DrawerTitle>
+              <a href={project.link} target="_blank" className="flex gap-1">
+                {project.title}
+                <CiShare1 />
+              </a>
+            </DrawerTitle>
+            <DrawerDescription>{project.summary}</DrawerDescription>
           </DrawerHeader>
-          <div className="p-4 pb-0 flex gap-4">
-            <div className="w-1/2">
-              <Image src="/mockup.png" alt="" width={310} height={300} />
+          <div className="p-4 pb-0 flex gap-3">
+            <div className="w-80 h-fit">
+              <Image src={project.imagesPath} alt="" width={310} height={300} />
             </div>
-            <p className="w-1/2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              ut, earum, molestias modi a tenetur voluptas impedit cum,
-              architecto laboriosam hic dolores necessitatibus commodi magni ab
-              non blanditiis quas cumque?
-            </p>
+            <div className="w-1/2 flex flex-col gap-2">
+              <p>{project.description}</p>
+              <Button variant="outline" className="w-fit">
+                <a
+                  href="https://github.com/YasminCastro/cervejometro"
+                  target="_blank"
+                >
+                  Github
+                </a>
+              </Button>
+            </div>
           </div>
           <DrawerFooter>
-            <Button>Voltar</Button>
+            <DrawerClose>
+              <Button className="w-full">Voltar</Button>
+            </DrawerClose>
           </DrawerFooter>
         </div>
       </DrawerContent>
