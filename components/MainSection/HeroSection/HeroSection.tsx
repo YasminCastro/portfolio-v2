@@ -17,7 +17,7 @@ const HeroSection = () => {
         </p>
 
         <Button asChild size="lg" className="w-fit">
-          <Link href="/">Contato</Link>
+          <Link href="#contact">Contato</Link>
         </Button>
       </div>
 
