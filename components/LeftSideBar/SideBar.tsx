@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import ContactInfo from "./ContactInfo/ContactInfo";
 import PersonalInfo from "./PersonalInfo/PersonalInfo";
@@ -20,7 +22,11 @@ const LeftSidebar = () => {
       <Separator />
       <OtherSkills />
       <Separator />
-      <Button className="w-full mt-4">Download CV</Button>
+      <Button className="mt-4 w-full" asChild>
+        <a href="/YasminCV-BR.pdf" target="_blank">
+          Download CV
+        </a>
+      </Button>
     </div>
   );
 };
