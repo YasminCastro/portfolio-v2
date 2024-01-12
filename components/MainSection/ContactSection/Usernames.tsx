@@ -35,6 +35,14 @@ const Usernames = () => {
           >
             <BiLogoGithub className="text-lg text-primary " />
           </a>
+
+          <a
+            className="rounded-full bg-primary-foreground p-2 text-sm font-bold text-primary"
+            href="/YasminCV-BR.pdf"
+            target="_blank"
+          >
+            CV
+          </a>
         </div>
       </div>
     </div>
