@@ -3,7 +3,6 @@ import {
   FaHome,
   FaBriefcase,
   FaGraduationCap,
-  FaProjectDiagram,
   FaRegUser,
   FaBug,
 } from "react-icons/fa";
