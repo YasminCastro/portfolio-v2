@@ -11,8 +11,8 @@ const LeftSidebar = () => {
   return (
     <div className="p-4">
       <ContactInfo />
-      <Separator />
-      <PersonalInfo />
+      {/* <Separator />
+      <PersonalInfo /> */}
       <Separator />
       <Languages />
       <Separator />

@@ -1,52 +1,42 @@
-import { Badge } from "@/components/ui/badge";
+import { FaMapLocationDot } from "react-icons/fa6";
 
 const ContactSection = () => {
   return (
     <div className="space-y-8">
       <div className="flex justify-center">
-        <h2 className="font-bold text-3xl">Formação acadêmica</h2>
+        <h2 className="font-bold text-3xl">Contato</h2>
       </div>
-      <div className=" bg-white  rounded-xl p-16">
-        <div className="space-y-3">
-          <Institution
-            institution="Instituto Federal de Goiás"
-            date="2020 - presente"
-            name="Bacharelado em Sistemas de Informação"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          rerum, odit voluptate, suscipit fugiat sapiente debitis officiis
-          tempora nemo aliquid voluptatum possimus! Enim saepe, voluptatibus
-          adipisci sed possimus nesciunt unde."
-          />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-interface IInstitution {
-  institution: string;
-  date: string;
-  name: string;
-  description: string;
-}
-
-const Institution = ({
-  institution,
-  date,
-  name,
-  description,
-}: IInstitution) => {
-  return (
-    <div className="flex justify-between w-full">
-      <div className="space-y-2">
-        <h3 className="font-bold text-lg">{institution}</h3>
+      <div className="bg-white rounded-xl p-10 flex ">
         <div>
-          <Badge>{date}</Badge>
+          <div className="bg-primary-foreground p-3 rounded-full w-fit">
+            <FaMapLocationDot className="text-primary" size={30} />
+          </div>
+          <div className="border border-pink-600  w-1/2">
+            <div className="flex justify-between">
+              <p>País:</p>
+              <p>Brasil</p>
+            </div>
+            <div className="flex justify-between">
+              <p>Cidade:</p>
+              <p>Goiânia - GO</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="space-y-6">
-        <p className="font-bold">{name}</p>
-        <p className="max-w-lg">{description}</p>
+        <div>
+          <div className="bg-primary-foreground p-3 rounded-full w-fit">
+            <FaMapLocationDot className="text-primary" size={30} />
+          </div>
+          <div className="border border-pink-600  w-1/2">
+            <div className="flex justify-between">
+              <p>País:</p>
+              <p>Brasil</p>
+            </div>
+            <div className="flex justify-between">
+              <p>Cidade:</p>
+              <p>Goiânia - GO</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
