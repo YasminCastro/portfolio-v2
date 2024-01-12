@@ -23,7 +23,12 @@ export function Project({ project }: Props) {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Image src="/mockup.png" alt="" width={310} height={300} />
+        <Image
+          src={project.imagesPath}
+          alt={`Página inicial do ${project.title}`}
+          width={310}
+          height={300}
+        />
       </DrawerTrigger>
       <DrawerContent>
         <div className="mx-auto w-full max-w-3xl">
