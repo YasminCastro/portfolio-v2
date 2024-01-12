@@ -1,8 +1,9 @@
 import React from "react";
 import HeroSection from "./HeroSection/HeroSection";
-import EducationSection from "./Education/Education";
-import WorkSection from "./Work/Work";
-import ProjectsSection from "./Projects/Projects";
+import EducationSection from "./EducationSection/Education";
+import WorkSection from "./WorkSection/Work";
+import ProjectsSection from "./ProjectsSection/Projects";
+import ContactSection from "./ContactSection/Contact";
 
 const MainSection = () => {
   return (
@@ -11,6 +12,7 @@ const MainSection = () => {
       <EducationSection />
       <WorkSection />
       <ProjectsSection />
+      <ContactSection />
     </div>
   );
 };
