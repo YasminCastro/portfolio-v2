@@ -14,6 +14,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { IProjects } from "@/config/projects";
+import { ProjectCarousel } from "./ProjectCarousel";
 
 interface Props {
   project: IProjects;
@@ -24,14 +25,14 @@ export function Project({ project }: Props) {
     <Drawer>
       <DrawerTrigger asChild>
         <Image
-          src={project.imagesPath}
+          src={project.thumbnail}
           alt={`Página inicial do ${project.title}`}
           width={310}
           height={300}
         />
       </DrawerTrigger>
       <DrawerContent>
-        <div className="mx-auto w-full max-w-3xl">
+        <div className="mx-auto w-full max-w-4xl">
           <DrawerHeader>
             <DrawerTitle>
               <a href={project.link} target="_blank" className="flex gap-1">
@@ -41,11 +42,12 @@ export function Project({ project }: Props) {
             </DrawerTitle>
             <DrawerDescription>{project.summary}</DrawerDescription>
           </DrawerHeader>
-          <div className="p-4 pb-0 flex gap-3">
+          <div className="p-4 pb-0 space-x-20 flex">
             <div className="w-80 h-fit">
-              <Image src={project.imagesPath} alt="" width={310} height={300} />
+              <ProjectCarousel images={project.images} />
+              {/* <Image src={project.imagesPath} alt="" width={310} height={300} /> */}
             </div>
-            <div className="w-1/2 flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
               <p>{project.description}</p>
               <Button variant="outline" className="w-fit">
                 <a
