@@ -13,9 +13,9 @@ const EducationSection = () => {
   return (
     <div id="education" className="space-y-8">
       <div className="flex justify-center">
-        <h2 className="text-3xl font-bold">Educação</h2>
+        <h2 className="text-3xl font-bold max-lg:text-2xl">Educação</h2>
       </div>
-      <div className=" rounded-xl  bg-white p-16">
+      <div className=" rounded-xl  bg-white p-16 max-lg:p-10">
         <div className="space-y-3">
           {educationASC.map((institution, index) => {
             return (
