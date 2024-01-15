@@ -7,7 +7,7 @@ import ContactSection from "./ContactSection/Contact";
 
 const MainSection = () => {
   return (
-    <div className="max-w-full space-y-20">
+    <div className="max-w-full space-y-20 max-lg:space-y-12">
       <HeroSection />
       <WorkSection />
       <ProjectsSection />

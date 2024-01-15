@@ -12,7 +12,7 @@ const ExperienceSection = ({ experience }: ExperienceSectionProps) => {
   const endDate = formatDate(experience.endDate);
 
   return (
-    <div className="flex w-full space-x-4 py-4">
+    <div className="flex w-full space-x-4 py-4 ">
       <div className="flex w-1/3 justify-center">
         <p className="text-sm">
           {startDate} - {endDate}
@@ -22,11 +22,13 @@ const ExperienceSection = ({ experience }: ExperienceSectionProps) => {
         <h3 className="font-bold">
           {experience.title} ・ {experience.company}
         </h3>
-        <p className="text-sm text-gray-500">{experience.type}</p>
-        <p className="mt-2 max-w-lg text-justify">{experience.description}</p>
+        <p className="text-sm text-gray-500 ">{experience.type}</p>
+        <p className="mt-2 max-w-lg text-justify max-lg:text-sm">
+          {experience.description}
+        </p>
       </div>
       <div>
-        <div className="max-w-md">
+        <div className="max-w-md max-lg:max-w-sm">
           {experience.skills.map((skill, index) => (
             <Badge key={`badge-${index}`} className="mx-1 mt-2">
               {skill}

@@ -13,9 +13,9 @@ const WorkSection = () => {
   return (
     <div id="work" className="space-y-8">
       <div className="flex justify-center">
-        <h2 className="text-3xl font-bold">Experiência</h2>
+        <h2 className="text-3xl font-bold max-lg:text-2xl">Experiência</h2>
       </div>
-      <div className=" rounded-xl  bg-white p-16">
+      <div className=" rounded-xl  bg-white p-16 max-lg:p-10">
         <div className="space-y-3">
           {experienceASC.map((experience, index) => {
             return (
