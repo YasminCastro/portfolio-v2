@@ -4,8 +4,8 @@ import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 const Usernames = () => {
   return (
     <div className="flex w-11/12 flex-col items-center rounded-xl bg-white px-7 py-4">
-      <div className="w-fit rounded-full bg-primary-foreground p-3">
-        <IoIosMail className="text-primary" size={30} />
+      <div className="w-fit rounded-full bg-primary-foreground p-3 max-lg:p-2">
+        <IoIosMail className="text-3xl text-primary max-lg:text-2xl" />
       </div>
       <div className="w-full space-y-4 pt-5 text-gray-600">
         <div className="space-y-1">
