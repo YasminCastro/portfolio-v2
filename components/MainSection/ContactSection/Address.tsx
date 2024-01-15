@@ -2,7 +2,7 @@ import { FaMapLocationDot } from "react-icons/fa6";
 
 const Address = () => {
   return (
-    <div className="flex w-3/4 flex-col items-center rounded-xl bg-white p-10">
+    <div className="flex w-11/12 flex-col items-center rounded-xl bg-white p-7 ">
       <div className="w-fit rounded-full bg-primary-foreground p-3">
         <FaMapLocationDot className="text-primary" size={30} />
       </div>

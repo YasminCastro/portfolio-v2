@@ -3,7 +3,7 @@ import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 
 const Usernames = () => {
   return (
-    <div className="flex w-3/4 flex-col items-center rounded-xl bg-white px-10 py-4">
+    <div className="flex w-11/12 flex-col items-center rounded-xl bg-white px-7 py-4">
       <div className="w-fit rounded-full bg-primary-foreground p-3">
         <IoIosMail className="text-primary" size={30} />
       </div>

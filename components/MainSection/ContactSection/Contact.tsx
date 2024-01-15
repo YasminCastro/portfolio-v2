@@ -5,7 +5,7 @@ const ContactSection = () => {
   return (
     <div id="contact" className="space-y-8">
       <div className="flex justify-center">
-        <h2 className="text-3xl font-bold">Contato</h2>
+        <h2 className="text-3xl font-bold max-lg:text-2xl">Contato</h2>
       </div>
       <div className="grid grid-cols-2 place-items-center">
         <Address />
