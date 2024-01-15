@@ -7,14 +7,14 @@ const HeroSection = () => {
   const initialDate = new Date(2021, 9);
   const today = new Date();
   return (
-    <div className="flex items-center justify-around rounded-xl bg-white px-16 py-3 shadow-lg">
-      <div className="space-y-3">
-        <h1 className="text-4xl font-bold max-lg:text-2xl">
+    <div className="flex items-center justify-around rounded-xl  bg-white px-16 py-3 shadow-lg max-xl:px-10">
+      <div className="space-y-3 ">
+        <h1 className="text-4xl font-bold max-xl:text-3xl">
           Eu sou a Yasmin, <br /> Desenvolvedora{" "}
           <a className="text-primary">Full-Stack</a>
         </h1>
 
-        <p className="w-3/4 max-w-xl text-justify">
+        <p className="w-3/4 max-w-xl text-justify max-xl:w-full max-lg:text-sm">
           Tenho mais de {differenceInYears(today, initialDate)} anos de
           experiência na área de desenvolvimento. Me destaco por ser prática,
           eficaz e por aprender tudo muito rápido. Sou apaixonada por tecnologia
@@ -26,8 +26,13 @@ const HeroSection = () => {
         </Button>
       </div>
 
-      <div className="relative h-[400px] w-[400px]">
-        <Image src="/girl.png" fill alt="Picture of the author" />
+      <div className="relative h-[400px] min-w-[400px] max-xl:h-[300px] max-xl:min-w-[300px] ">
+        <Image
+          src="/girl.png"
+          fill
+          alt="Picture of the author"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
     </div>
   );
