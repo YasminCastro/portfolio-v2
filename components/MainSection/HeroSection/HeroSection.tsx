@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div className="flex items-center justify-around rounded-xl bg-white px-16 py-3 shadow-lg">
       <div className="space-y-3">
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-4xl font-bold max-lg:text-2xl">
           Eu sou a Yasmin, <br /> Desenvolvedora{" "}
           <a className="text-primary">Full-Stack</a>
         </h1>
@@ -26,14 +26,8 @@ const HeroSection = () => {
         </Button>
       </div>
 
-      <div className="flex-shrink-0">
-        <Image
-          src="/girl.png"
-          width={400}
-          height={400}
-          alt="Picture of the author"
-          className="flex-shrink-0"
-        />
+      <div className="relative h-[400px] w-[400px]">
+        <Image src="/girl.png" fill alt="Picture of the author" />
       </div>
     </div>
   );
