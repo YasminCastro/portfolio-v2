@@ -12,7 +12,7 @@ export default function Home() {
         <div className="m-8 flex-grow">
           <MainSection />
         </div>
-        <div className="min-w-16 w-16"></div>
+        <div className="min-w-16 max-[1200px]:min-w-28 w-16 max-[1200px]:w-28"></div>
         <div className="min-w-16 fixed right-0 h-screen w-16 bg-card shadow-lg">
           <RightSidebar />
         </div>
