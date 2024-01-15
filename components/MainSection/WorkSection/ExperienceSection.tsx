@@ -28,9 +28,9 @@ const ExperienceSection = ({ experience }: ExperienceSectionProps) => {
         </p>
       </div>
       <div>
-        <div className="max-w-md max-lg:max-w-sm">
+        <div className="max-w-md max-xl:max-w-xs">
           {experience.skills.map((skill, index) => (
-            <Badge key={`badge-${index}`} className="mx-1 mt-2">
+            <Badge key={`badge-${index}`} className="text- mx-1 mt-2">
               {skill}
             </Badge>
           ))}
