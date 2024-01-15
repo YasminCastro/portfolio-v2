@@ -3,8 +3,8 @@ import { Progress } from "@/components/ui/progress";
 const Skills = () => {
   return (
     <div className="py-3">
-      <h2 className="font-bold text-lg">Skills</h2>
-      <div className="space-y-4 my-3">
+      <h2 className="text-lg font-bold max-lg:text-base">Skills</h2>
+      <div className="my-3 space-y-4">
         <SkillProgess skill="TypeScript/JavaScript" value={90} />
         <SkillProgess skill="Node.js" value={85} />
         <SkillProgess skill="React.js" value={70} />
@@ -25,7 +25,7 @@ interface ISkillProgress {
 const SkillProgess = ({ skill, value }: ISkillProgress) => {
   return (
     <div>
-      <p>{skill}</p>
+      <p className="max-lg:text-sm">{skill}</p>
       <Progress value={value} className="h-1" />
     </div>
   );
