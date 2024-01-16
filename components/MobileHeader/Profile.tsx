@@ -8,7 +8,7 @@ export function Profile() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Avatar className="h-10 w-10 ">
+        <Avatar className="h-8 w-8 ">
           <button>
             <AvatarImage
               src="https://avatars.githubusercontent.com/u/62770317"
