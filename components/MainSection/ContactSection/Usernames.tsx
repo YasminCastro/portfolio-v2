@@ -3,19 +3,19 @@ import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 
 const Usernames = () => {
   return (
-    <div className="flex w-11/12 flex-col items-center rounded-xl bg-white px-7 py-4">
+    <div className="flex min-h-full w-11/12 flex-col items-center justify-around rounded-xl bg-white p-7 max-lg:p-4">
       <div className="w-fit rounded-full bg-primary-foreground p-3 max-lg:p-2">
         <IoIosMail className="text-3xl text-primary max-lg:text-2xl" />
       </div>
       <div className="w-full space-y-4 pt-5 text-gray-600">
         <div className="space-y-1">
           <div className="flex justify-between ">
-            <p className="font-bold">Email:</p>
-            <p>yasminsdcastro@gmail.com</p>
+            <p className="font-bold ">Email:</p>
+            <p className="max-lg:text-sm">yasminsdcastro@gmail.com</p>
           </div>
           <div className="flex justify-between">
             <p className="font-bold">Discord:</p>
-            <p>yascastro</p>
+            <p className="max-lg:text-sm">yascastro</p>
           </div>
         </div>
 
