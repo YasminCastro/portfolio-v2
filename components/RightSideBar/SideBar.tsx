@@ -40,15 +40,13 @@ const RightSidebar = () => {
       >
         <FaRegUser className="text-lg max-lg:text-base" />
       </a>
-      <button className="rounded-full bg-secondary p-3 hover:bg-primary-foreground max-lg:p-2 ">
-        <a
-          className="text-sm font-bold max-lg:text-xs"
-          href="/YasminCV-BR.pdf"
-          target="_blank"
-        >
-          CV
-        </a>
-      </button>
+      <a
+        className="rounded-full bg-secondary p-3 text-sm font-bold hover:bg-primary-foreground max-lg:p-2 max-lg:text-xs"
+        href="/YasminCV-BR.pdf"
+        target="_blank"
+      >
+        CV
+      </a>
     </div>
   );
 };
