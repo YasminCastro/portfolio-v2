@@ -22,8 +22,8 @@ export default function Home() {
         <MobileHeader />
         <MainSection />
       </div>
-      <footer className="flex w-full items-center justify-center bg-card px-20 py-7 shadow-md">
-        <div className="text-sm text-gray-600">
+      <footer className="flex w-full items-center justify-center border bg-card py-5 shadow-md">
+        <div className="text-sm text-gray-600 max-sm:text-xs">
           <p>Copyright © 2023 Yas Castro.</p>
         </div>
       </footer>
