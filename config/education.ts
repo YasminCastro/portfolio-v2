@@ -8,8 +8,8 @@ export interface IEducation {
 
 const education: IEducation[] = [
   {
-    title: "Instituto Federal de Goiás",
-    institution: "Bacharelado em Sistemas de Informação",
+    institution: "Instituto Federal de Goiás",
+    title: "Bacharelado em Sistemas de Informação",
     startDate: "2020",
     endDate: "presente",
     description:

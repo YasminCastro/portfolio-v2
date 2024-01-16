@@ -7,9 +7,9 @@ interface IProps {
 
 const Institution = ({ institution }: IProps) => {
   return (
-    <div className="flex w-full justify-between space-x-4 py-4">
+    <div className="flex w-full space-x-4 py-4 max-[920px]:flex-col">
       <div>
-        <h3 className="text-lg font-bold ">{institution.institution}</h3>
+        <h3 className="text-lg font-bold">{institution.institution}</h3>
         <div>
           {institution.endDate && (
             <Badge>
@@ -20,7 +20,7 @@ const Institution = ({ institution }: IProps) => {
           {!institution.endDate && <Badge>{institution.startDate}</Badge>}
         </div>
       </div>
-      <div className="space-y-6">
+      <div className="space-y-6 max-[920px]:mt-7 max-[920px]:space-y-1">
         <p className="font-bold">{institution.title}</p>
         <p className="mt-2 max-w-lg text-justify max-lg:text-sm">
           {institution.description}
