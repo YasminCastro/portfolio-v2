@@ -7,7 +7,7 @@ interface IProps {
 
 const Institution = ({ institution }: IProps) => {
   return (
-    <div className="flex w-full space-x-4 py-4 max-[920px]:flex-col">
+    <div className="flex w-full justify-around space-x-4 py-4 max-[920px]:flex-col">
       <div>
         <h3 className="text-lg font-bold">{institution.institution}</h3>
         <div>
