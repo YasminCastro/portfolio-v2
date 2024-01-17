@@ -8,7 +8,7 @@ const ProjectsSection = () => {
         <h2 className="text-3xl font-bold max-lg:text-2xl">Projetos</h2>
       </div>
       <div className=" p-16 max-lg:p-6">
-        <div className="grid grid-cols-3 place-items-center gap-3">
+        <div className="grid grid-cols-3 place-items-center gap-3 max-sm:flex max-sm:flex-col">
           {projects.map((project, index) => {
             return <Project project={project} key={`project-${index}`} />;
           })}
