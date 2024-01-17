@@ -45,12 +45,14 @@ export function Project({ project }: Props) {
             </DrawerTitle>
             <DrawerDescription>{project.summary}</DrawerDescription>
           </DrawerHeader>
-          <div className="p-4 pb-0 space-x-20 flex">
-            <div className="w-80 h-fit">
+          <div className="flex  space-x-20 p-4 pb-0 max-md:space-x-0">
+            <div className="h-fit w-80 max-md:hidden">
               <ProjectCarousel images={project.images} />
             </div>
             <div className="flex flex-col gap-2">
-              <p>{project.description}</p>
+              <p className="text-justify max-md:text-sm">
+                {project.description}
+              </p>
               <Button variant="outline" className="w-fit">
                 <a href={project.repositorio} target="_blank">
                   Github
