@@ -23,7 +23,7 @@ const LanguageProgess = ({ languageName, value }: ILanguageProgress) => {
   return (
     <div>
       <p className="max-lg:text-sm">{languageName}</p>
-      <Progress value={value} className="h-1" />
+      <Progress value={value} className="h-1" aria-label={languageName} />
     </div>
   );
 };
