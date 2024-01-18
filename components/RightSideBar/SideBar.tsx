@@ -6,10 +6,12 @@ import {
   FaRegUser,
   FaBug,
 } from "react-icons/fa";
+import { ModeToggle } from "@/components/ModeToggle";
 
 const RightSidebar = () => {
   return (
     <div className="flex h-screen flex-col items-center justify-center space-y-6 max-lg:space-y-5">
+      <ModeToggle />
       <a
         className="rounded-full bg-secondary p-3 hover:bg-primary-foreground  max-lg:p-2"
         href="#"
