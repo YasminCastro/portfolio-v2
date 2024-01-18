@@ -9,7 +9,7 @@ export function Profile() {
     <Dialog>
       <DialogTrigger asChild>
         <Avatar className="h-8 w-8 ">
-          <button>
+          <button aria-label="Abrir informações mais da Yasmin">
             <AvatarImage
               src="https://avatars.githubusercontent.com/u/62770317"
               alt="Yasmin Castro"
