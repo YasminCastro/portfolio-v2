@@ -23,7 +23,7 @@ export default function Home() {
         <MainSection />
       </div>
       <footer className="flex w-full items-center justify-center border bg-card py-5 shadow-md">
-        <div className="text-sm text-gray-600 max-sm:text-xs">
+        <div className="text-sm text-gray-600 dark:text-gray-300 max-sm:text-xs">
           <p>Copyright © 2023 Yas Castro.</p>
         </div>
       </footer>
