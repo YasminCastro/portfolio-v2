@@ -4,10 +4,14 @@ import { useTheme } from "next-themes";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
 
 export function ModeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
 
+  useEffect(() => {
+    setTheme("light");
+  }, []);
   return (
     <Button
       variant="outline"
