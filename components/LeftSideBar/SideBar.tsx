@@ -12,7 +12,6 @@ const LeftSidebar = () => {
   return (
     <div className="p-4">
       <ContactInfo />
-
       <Separator />
       <Languages />
       <Separator />

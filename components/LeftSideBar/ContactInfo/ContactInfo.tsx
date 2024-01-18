@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
 
 import { AiOutlineMail } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
@@ -6,7 +7,7 @@ import { FiGithub } from "react-icons/fi";
 
 const ContactInfo = () => {
   return (
-    <div className="mb-6 flex flex-col items-center space-y-1">
+    <div className="mb-3 flex flex-col items-center space-y-2">
       <Avatar className="h-24 w-24 max-lg:h-20 max-lg:w-20">
         <AvatarImage
           src="https://avatars.githubusercontent.com/u/62770317"
@@ -16,34 +17,30 @@ const ContactInfo = () => {
       </Avatar>
 
       <h1 className="text-lg font-bold max-lg:text-sm">Yasmin Castro</h1>
-      <h2 className="text-base  text-gray-600 max-lg:text-sm">
-        Full-Stack Developer
-      </h2>
-      <div className="flex gap-4 max-lg:gap-2">
+      <Badge>Full-Stack Developer</Badge>
+
+      <div className="flex gap-5 pt-5 max-lg:gap-3">
         <a
           href="https://www.linkedin.com/in/yasmin-sdcastro/"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full bg-primary p-2 hover:bg-primary-foreground"
           aria-label="Visite meu perfil no LinkedIn"
         >
-          <BiLogoLinkedin className="text-lg text-secondary hover:text-secondary-foreground" />
+          <BiLogoLinkedin className="text-lg" />
         </a>
         <a
           href="mailto:yasminsdcastro@gmail.com"
-          className="rounded-full bg-primary p-2 hover:bg-primary-foreground"
           aria-label="Me envie um email"
         >
-          <AiOutlineMail className="text-lg text-secondary hover:text-secondary-foreground" />
+          <AiOutlineMail className="text-lg" />
         </a>
         <a
           href="https://github.com/YasminCastro"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full bg-primary p-2 hover:bg-primary-foreground"
           aria-label="Veja meu perfil no GitHub"
         >
-          <FiGithub className="text-lg text-secondary hover:text-secondary-foreground" />
+          <FiGithub className="text-lg" />
         </a>
       </div>
     </div>
