@@ -22,7 +22,7 @@ const ExperienceSection = ({ experience }: ExperienceSectionProps) => {
         <h3 className="font-bold">
           {experience.title} ・ {experience.company}
         </h3>
-        <p className="text-sm text-gray-500  max-[920px]:hidden">
+        <p className="text-sm text-gray-500  dark:text-gray-400 max-[920px]:hidden">
           {experience.type}
         </p>
         <p className="hidden text-sm text-gray-500  max-[920px]:block">

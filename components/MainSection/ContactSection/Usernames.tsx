@@ -3,11 +3,11 @@ import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 
 const Usernames = () => {
   return (
-    <div className="flex min-h-full w-80 flex-col items-center justify-around rounded-xl bg-white p-7 max-lg:p-4 max-md:w-full">
-      <div className="w-fit rounded-full bg-primary-foreground p-3 max-lg:p-2">
+    <div className="flex min-h-full w-80 flex-col items-center justify-around rounded-xl bg-card p-7 max-lg:p-4 max-md:w-full">
+      <div className="w-fit rounded-full bg-primary-foreground p-3 dark:bg-secondary max-lg:p-2">
         <IoIosMail className="text-3xl text-primary max-lg:text-2xl" />
       </div>
-      <div className="w-full space-y-4 pt-5 text-gray-600">
+      <div className="w-full space-y-4 pt-5 text-gray-600 dark:text-gray-100">
         <div className="space-y-1">
           <div className="flex justify-between ">
             <p className="font-bold ">Email:</p>
@@ -23,7 +23,7 @@ const Usernames = () => {
           <a
             href="https://www.linkedin.com/in/yasmin-sdcastro/"
             target="_blank"
-            className="rounded-full bg-primary-foreground p-2"
+            className="rounded-full bg-primary-foreground p-2 dark:bg-secondary"
             aria-label="Visite meu perfil no LinkedIn"
           >
             <BiLogoLinkedin className="text-lg text-primary " />
@@ -32,14 +32,14 @@ const Usernames = () => {
           <a
             href="https://github.com/YasminCastro"
             target="_blank"
-            className="rounded-full bg-primary-foreground p-2"
+            className="rounded-full bg-primary-foreground p-2 dark:bg-secondary"
             aria-label="Veja meu perfil no GitHub"
           >
             <BiLogoGithub className="text-lg text-primary " />
           </a>
 
           <a
-            className="rounded-full bg-primary-foreground p-2 text-sm font-bold text-primary"
+            className="rounded-full bg-primary-foreground p-2 text-sm font-bold text-primary dark:bg-secondary"
             href="/YasminCV-BR.pdf"
             target="_blank"
           >

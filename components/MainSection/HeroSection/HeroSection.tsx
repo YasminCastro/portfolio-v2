@@ -7,7 +7,7 @@ const HeroSection = () => {
   const initialDate = new Date(2021, 9);
   const today = new Date();
   return (
-    <div className="flex  items-center justify-around  rounded-xl bg-white px-16 py-3 shadow-lg max-xl:px-10  max-lg:pl-6 max-lg:pr-0 max-[580px]:flex-col max-[580px]:pr-8">
+    <div className="flex  items-center justify-around  rounded-xl bg-card px-16 py-3 shadow-lg max-xl:px-10  max-lg:pl-6 max-lg:pr-0 max-[580px]:flex-col max-[580px]:pr-8">
       <div className="space-y-3 ">
         <h1 className="text-4xl font-bold max-xl:text-3xl">
           Eu sou a Yasmin, <br /> Desenvolvedora{" "}
