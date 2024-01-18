@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="space-y-3 ">
         <h1 className="text-4xl font-bold max-xl:text-3xl">
           Eu sou a Yasmin, <br /> Desenvolvedora{" "}
-          <a className="text-primary">Full-Stack</a>
+          <span className="text-primary">Full-Stack</span>
         </h1>
 
         <p className="w-3/4 max-w-xl text-justify max-xl:w-full max-lg:text-sm">
