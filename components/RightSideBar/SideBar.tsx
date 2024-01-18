@@ -13,30 +13,36 @@ const RightSidebar = () => {
       <a
         className="rounded-full bg-secondary p-3 hover:bg-primary-foreground  max-lg:p-2"
         href="#"
+        aria-label="Ir para seção inicial"
       >
         <FaHome className="text-xl  max-lg:text-base" />
       </a>
       <a
         className="rounded-full bg-secondary p-3 hover:bg-primary-foreground max-lg:p-2"
-        href="#education"
-      >
-        <FaGraduationCap className="text-xl max-lg:text-lg" />
-      </a>
-      <a
-        className="rounded-full bg-secondary p-3 hover:bg-primary-foreground max-lg:p-2"
         href="#work"
+        aria-label="Ir para seção de experiência"
       >
         <FaBriefcase className="text-lg max-lg:text-base" />
       </a>
       <a
         className="rounded-full bg-secondary p-3 hover:bg-primary-foreground max-lg:p-2"
         href="#projects"
+        aria-label="Ir para seção de projetos"
       >
         <FaBug className="text-lg max-lg:text-base" />
       </a>
       <a
         className="rounded-full bg-secondary p-3 hover:bg-primary-foreground max-lg:p-2"
+        href="#education"
+        aria-label="Ir para seção de educação"
+      >
+        <FaGraduationCap className="text-xl max-lg:text-lg" />
+      </a>
+
+      <a
+        className="rounded-full bg-secondary p-3 hover:bg-primary-foreground max-lg:p-2"
         href="#contact"
+        aria-label="Ir para seção de contato"
       >
         <FaRegUser className="text-lg max-lg:text-base" />
       </a>

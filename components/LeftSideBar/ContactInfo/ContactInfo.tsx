@@ -25,12 +25,14 @@ const ContactInfo = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full bg-primary p-2 hover:bg-primary-foreground"
+          aria-label="Visite meu perfil no LinkedIn"
         >
           <BiLogoLinkedin className="text-lg text-secondary hover:text-secondary-foreground" />
         </a>
         <a
           href="mailto:yasminsdcastro@gmail.com"
           className="rounded-full bg-primary p-2 hover:bg-primary-foreground"
+          aria-label="Me envie um email"
         >
           <AiOutlineMail className="text-lg text-secondary hover:text-secondary-foreground" />
         </a>
@@ -39,6 +41,7 @@ const ContactInfo = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full bg-primary p-2 hover:bg-primary-foreground"
+          aria-label="Veja meu perfil no GitHub"
         >
           <FiGithub className="text-lg text-secondary hover:text-secondary-foreground" />
         </a>

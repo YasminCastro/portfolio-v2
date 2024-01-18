@@ -24,6 +24,7 @@ const Usernames = () => {
             href="https://www.linkedin.com/in/yasmin-sdcastro/"
             target="_blank"
             className="rounded-full bg-primary-foreground p-2"
+            aria-label="Visite meu perfil no LinkedIn"
           >
             <BiLogoLinkedin className="text-lg text-primary " />
           </a>
@@ -32,6 +33,7 @@ const Usernames = () => {
             href="https://github.com/YasminCastro"
             target="_blank"
             className="rounded-full bg-primary-foreground p-2"
+            aria-label="Veja meu perfil no GitHub"
           >
             <BiLogoGithub className="text-lg text-primary " />
           </a>
