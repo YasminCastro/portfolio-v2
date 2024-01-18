@@ -32,6 +32,7 @@ const experiences: IExperience[] = [
       "TypeScript",
       "React.js",
       "AWS",
+      "Next.js",
       "StyledComponents",
       "Express.js",
       "MySQL",
