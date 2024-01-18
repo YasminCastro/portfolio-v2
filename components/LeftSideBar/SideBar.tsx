@@ -20,7 +20,7 @@ const LeftSidebar = () => {
       <Separator />
       <OtherSkills />
       <Separator />
-      <Button className="mt-4 w-full" asChild>
+      <Button className="mt-4 w-full text-white" asChild>
         <a href="/YasminCV-BR.pdf" target="_blank">
           Download CV
         </a>
