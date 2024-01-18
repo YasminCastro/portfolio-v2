@@ -13,28 +13,28 @@ const RightSidebar = () => {
     <div className="flex h-screen flex-col items-center justify-center space-y-6 max-lg:space-y-5">
       <ModeToggle />
       <a
-        className="rounded-full bg-secondary p-3 hover:bg-primary-foreground  max-lg:p-2"
+        className="rounded-full bg-secondary p-3  max-lg:p-2"
         href="#"
         aria-label="Ir para seção inicial"
       >
         <FaHome className="text-xl  max-lg:text-base" />
       </a>
       <a
-        className="rounded-full bg-secondary p-3 hover:bg-primary-foreground max-lg:p-2"
+        className="rounded-full bg-secondary p-3 max-lg:p-2"
         href="#work"
         aria-label="Ir para seção de experiência"
       >
         <FaBriefcase className="text-lg max-lg:text-base" />
       </a>
       <a
-        className="rounded-full bg-secondary p-3 hover:bg-primary-foreground max-lg:p-2"
+        className="rounded-full bg-secondary p-3 max-lg:p-2"
         href="#projects"
         aria-label="Ir para seção de projetos"
       >
         <FaBug className="text-lg max-lg:text-base" />
       </a>
       <a
-        className="rounded-full bg-secondary p-3 hover:bg-primary-foreground max-lg:p-2"
+        className="rounded-full bg-secondary p-3 max-lg:p-2"
         href="#education"
         aria-label="Ir para seção de educação"
       >
@@ -42,14 +42,14 @@ const RightSidebar = () => {
       </a>
 
       <a
-        className="rounded-full bg-secondary p-3 hover:bg-primary-foreground max-lg:p-2"
+        className="rounded-full bg-secondary p-3 max-lg:p-2"
         href="#contact"
         aria-label="Ir para seção de contato"
       >
         <FaRegUser className="text-lg max-lg:text-base" />
       </a>
       <a
-        className="rounded-full bg-secondary p-3 text-sm font-bold hover:bg-primary-foreground max-lg:p-2 max-lg:text-xs"
+        className="rounded-full bg-secondary p-3 text-sm font-bold max-lg:p-2 max-lg:text-xs"
         href="/YasminCV-BR.pdf"
         target="_blank"
       >
