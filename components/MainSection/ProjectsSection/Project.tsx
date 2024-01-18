@@ -27,8 +27,8 @@ export function Project({ project }: Props) {
         <Image
           src={project.thumbnail}
           alt={`Página inicial do ${project.title}`}
-          width={310}
-          height={300}
+          width={384}
+          height={293}
         />
       </DrawerTrigger>
       <DrawerContent>
