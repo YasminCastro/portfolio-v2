@@ -19,6 +19,7 @@ const RightSidebar = () => {
       >
         <FaHome className="text-xl  max-lg:text-base" />
       </a>
+
       <a
         className="rounded-full bg-secondary p-3 max-lg:p-2"
         href="#work"

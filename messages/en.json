@@ -1,0 +1,15 @@
+{
+  "Index": {
+    "title": "Hello world!!",
+    "subtitle": "How is it going?",
+    "alertMessage": "Something went wrong!"
+  },
+  "Languages": {
+    "languages": "Languages",
+    "portuguese": "Portuguese",
+    "english": "English"
+  },
+  "OtherSkills": {
+    "OtherSkills": "Other Skills"
+  }
+}

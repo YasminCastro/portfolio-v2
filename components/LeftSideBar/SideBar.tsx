@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import ContactInfo from "./ContactInfo/ContactInfo";
 import Languages from "./Languages/Languages";

@@ -2,8 +2,17 @@ import LeftSidebar from "@/components/LeftSideBar/SideBar";
 import MainSection from "@/components/MainSection/MainSection";
 import MobileHeader from "@/components/MobileHeader/Index";
 import RightSidebar from "@/components/RightSideBar/SideBar";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function Home() {
+interface ILocale {
+  params: {
+    locale: string;
+  };
+}
+
+export default function Home({ params: { locale } }: ILocale) {
+  unstable_setRequestLocale(locale);
+
   return (
     <main>
       <div className="flex bg-accent max-md:hidden">
