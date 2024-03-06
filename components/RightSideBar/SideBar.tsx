@@ -7,6 +7,7 @@ import {
   FaBug,
 } from "react-icons/fa";
 import { ModeToggle } from "@/components/ModeToggle";
+import { LanguageToggle } from "../LanguageToggle";
 
 const RightSidebar = () => {
   return (
@@ -56,6 +57,7 @@ const RightSidebar = () => {
       >
         CV
       </a>
+      <LanguageToggle side="right" />
     </div>
   );
 };
