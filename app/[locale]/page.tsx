@@ -2,19 +2,22 @@ import LeftSidebar from "@/components/LeftSideBar/SideBar";
 import MainSection from "@/components/MainSection/MainSection";
 import MobileHeader from "@/components/MobileHeader/Index";
 import RightSidebar from "@/components/RightSideBar/SideBar";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("Index");
+  console.log(t("title"));
   return (
     <main>
       <div className="flex bg-accent max-md:hidden">
-        <div className="min-w-72 h-fit w-72 bg-card shadow-lg">
+        <div className="h-fit w-72 min-w-72 bg-card shadow-lg">
           <LeftSidebar />
         </div>
         <div className="m-8 flex-grow">
           <MainSection />
         </div>
-        <div className="min-w-16 max-[1200px]:min-w-28 w-16 max-[1200px]:w-28 max-[920px]:hidden"></div>
-        <div className="min-w-16 fixed right-0 h-screen w-16 bg-card shadow-lg max-[920px]:hidden">
+        <div className="w-16 min-w-16 max-[1200px]:w-28 max-[1200px]:min-w-28 max-[920px]:hidden"></div>
+        <div className="fixed right-0 h-screen w-16 min-w-16 bg-card shadow-lg max-[920px]:hidden">
           <RightSidebar />
         </div>
       </div>
