@@ -1,5 +1,10 @@
 {
-  "Index": {
-    "title": "Hello world!"
+  "Languages": {
+    "languages": "Languages",
+    "english": "English",
+    "portuguese": "Portuguese"
+  },
+  "OtherSkills": {
+    "otherSkills": "Other Skills"
   }
 }

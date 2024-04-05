@@ -1,5 +1,10 @@
 {
-  "Index": {
-    "title": "Olá Mundo!"
+  "Languages": {
+    "languages": "Idiomas",
+    "english": "Inglês",
+    "portuguese": "Português"
+  },
+  "OtherSkills": {
+    "otherSkills": "Outras Skills"
   }
 }
