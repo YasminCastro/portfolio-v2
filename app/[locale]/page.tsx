@@ -2,11 +2,8 @@ import LeftSidebar from "@/components/LeftSideBar/SideBar";
 import MainSection from "@/components/MainSection/MainSection";
 import MobileHeader from "@/components/MobileHeader/Index";
 import RightSidebar from "@/components/RightSideBar/SideBar";
-import { useTranslations } from "next-intl";
 
 export default function Home() {
-  const t = useTranslations("Languages");
-  console.log(t("english"));
   return (
     <main>
       <div className="flex bg-accent max-md:hidden">

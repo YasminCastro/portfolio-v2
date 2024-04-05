@@ -1,9 +1,12 @@
 import { Progress } from "@/components/ui/progress";
+import { useTranslations } from "next-intl";
 
 const Languages = () => {
+  const t = useTranslations("Languages");
+  console.log(t("languages"));
   return (
     <div className=" py-3">
-      <h2 className="text-lg font-bold max-lg:text-base">Idiomas</h2>
+      <h2 className="text-lg font-bold max-lg:text-base">{t("languages")}</h2>
       <div className="my-3 space-y-4">
         <LanguageProgess languageName="Português" value={100} />
         <LanguageProgess languageName="Inglês" value={80} />
