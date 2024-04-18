@@ -23,5 +23,11 @@
   },
   "EducationSection": {
     "education": "Education"
+  },
+  "ContactSection": {
+    "contact": "Contact",
+    "country": "Country",
+    "city": "City",
+    "brazil": "Brazil"
   }
 }
