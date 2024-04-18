@@ -2,23 +2,25 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { differenceInYears } from "date-fns";
+import { useTranslations, useLocale } from "next-intl";
 
 const HeroSection = () => {
+  const t = useTranslations("Main");
+  const locale = useLocale();
+
   const initialDate = new Date(2021, 9);
   const today = new Date();
   return (
     <div className="flex  items-center justify-around  rounded-xl bg-card px-16 py-3 shadow-lg max-xl:px-10  max-lg:pl-6 max-lg:pr-0 max-[580px]:flex-col max-[580px]:gap-8 max-[580px]:pr-8">
       <div className="space-y-3 ">
-        <h1 className="text-4xl font-bold max-xl:text-3xl">
-          Eu sou a Yasmin, <br /> Desenvolvedora{" "}
-          <span className="text-primary">Full-Stack</span>
-        </h1>
+        {locale === "en" ? (
+          <TitleEN im={t("im")} developer={t("developer")} />
+        ) : (
+          <TitlePT im={t("im")} developer={t("developer")} />
+        )}
 
         <p className="w-3/4 max-w-xl text-justify max-xl:w-full max-lg:text-sm">
-          Tenho mais de {differenceInYears(today, initialDate)} anos de
-          experiência na área de desenvolvimento. Me destaco por ser prática,
-          eficaz e por aprender tudo muito rápido. Sou apaixonada por tecnologia
-          em geral e sempre busco me manter atualizada.
+          {t("have")} {differenceInYears(today, initialDate)} {t("description")}{" "}
         </p>
 
         <Button asChild size="lg" className="w-fit max-[580px]:w-full">
@@ -40,3 +42,20 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+const TitleEN = ({ im, developer }: ITitle) => (
+  <h1 className="text-4xl font-bold max-xl:text-3xl">
+    {im}, <br /> <span className="text-primary">Full-Stack</span> {developer}
+  </h1>
+);
+
+const TitlePT = ({ im, developer }: ITitle) => (
+  <h1 className="text-4xl font-bold max-xl:text-3xl">
+    {im}, <br /> {developer} <span className="text-primary">Full-Stack</span>
+  </h1>
+);
+
+interface ITitle {
+  im: string;
+  developer: string;
+}

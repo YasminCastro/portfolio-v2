@@ -6,5 +6,11 @@
   },
   "OtherSkills": {
     "otherSkills": "Outras Skills"
+  },
+  "Main": {
+    "im": "Eu sou a Yasmin",
+    "developer": "Desenvolvedora",
+    "have": "Tenho mais de",
+    "description": "anos de experiência na área de desenvolvimento. Me destaco por ser prática, eficaz e por aprender tudo muito rápido. Sou apaixonada por tecnologia em geral e sempre busco me manter atualizada."
   }
 }
