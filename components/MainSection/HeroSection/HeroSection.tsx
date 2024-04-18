@@ -5,7 +5,7 @@ import { differenceInYears } from "date-fns";
 import { useTranslations, useLocale } from "next-intl";
 
 const HeroSection = () => {
-  const t = useTranslations("Main");
+  const t = useTranslations("HeroSection");
   const locale = useLocale();
 
   const initialDate = new Date(2021, 9);
