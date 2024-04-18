@@ -15,12 +15,15 @@ import {
 } from "@/components/ui/drawer";
 import { IProjects } from "@/config/projects";
 import { ProjectCarousel } from "./ProjectCarousel";
+import { useTranslations } from "next-intl";
 
 interface Props {
   project: IProjects;
 }
 
 export function Project({ project }: Props) {
+  const t = useTranslations("ProjectsSection");
+
   return (
     <Drawer>
       <DrawerTrigger asChild>
@@ -62,7 +65,7 @@ export function Project({ project }: Props) {
           </div>
           <DrawerFooter>
             <DrawerClose>
-              <Button className="w-full">Voltar</Button>
+              <Button className="w-full">{t("return")}</Button>
             </DrawerClose>
           </DrawerFooter>
         </div>

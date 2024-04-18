@@ -18,6 +18,7 @@
     "present": "present"
   },
   "ProjectsSection": {
-    "projects": "Projects"
+    "projects": "Projects",
+    "return": "Return"
   }
 }
