@@ -3,12 +3,19 @@ import {
   FaHome,
   FaBriefcase,
   FaGraduationCap,
-  FaRegUser,
   FaBug,
+  FaPhone,
 } from "react-icons/fa";
 import { ModeToggle } from "@/components/ModeToggle";
+import { useLocale } from "next-intl";
 
 const RightSidebar = () => {
+  const locale = useLocale();
+  let cvPath = "/YasminCV-EN.pdf";
+
+  if (locale === "pt") {
+    cvPath = "/YasminCV-PT.pdf";
+  }
   return (
     <div className="flex h-screen flex-col items-center justify-center space-y-6 max-lg:space-y-5">
       <ModeToggle />
@@ -46,11 +53,11 @@ const RightSidebar = () => {
         href="#contact"
         aria-label="Ir para seção de contato"
       >
-        <FaRegUser className="text-lg max-lg:text-base" />
+        <FaPhone className="text-lg max-lg:text-base" />
       </a>
       <a
         className="rounded-full bg-secondary p-3 text-sm font-bold max-lg:p-2 max-lg:text-xs"
-        href="/YasminCV-BR.pdf"
+        href={cvPath}
         target="_blank"
       >
         CV
