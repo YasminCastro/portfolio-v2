@@ -3,7 +3,6 @@
 import { useTheme } from "next-themes";
 import { FaSun, FaMoon } from "react-icons/fa";
 
-import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
 export function ModeToggle() {
@@ -15,10 +14,8 @@ export function ModeToggle() {
   }, []);
 
   return (
-    <Button
-      variant="outline"
-      size="icon"
-      className="rounded-full bg-secondary shadow-none"
+    <a
+      className="cursor-pointer rounded-full bg-secondary p-3 max-lg:p-2"
       aria-label="Mudar tema da página"
       onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
     >
@@ -28,6 +25,6 @@ export function ModeToggle() {
       {isClient && resolvedTheme === "dark" && (
         <FaMoon className="text-lg max-lg:text-base" />
       )}
-    </Button>
+    </a>
   );
 }
