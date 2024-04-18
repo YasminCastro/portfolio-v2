@@ -20,5 +20,8 @@
   "ProjectsSection": {
     "projects": "Projects",
     "return": "Return"
+  },
+  "EducationSection": {
+    "education": "Education"
   }
 }

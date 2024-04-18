@@ -6,7 +6,7 @@ export interface IEducation {
   description: string;
 }
 
-const education: IEducation[] = [
+export const educationPT: IEducation[] = [
   {
     institution: "Instituto Federal de Goiás",
     title: "Bacharelado em Sistemas de Informação",
@@ -25,4 +25,21 @@ const education: IEducation[] = [
   },
 ];
 
-export default education;
+export const educationEN: IEducation[] = [
+  {
+    institution: "Instituto Federal de Goiás",
+    title: "Bachelor's Degree in Information Systems",
+    startDate: "2020",
+    endDate: "present",
+    description:
+      "The Information Systems course at IFG was an enriching journey that solidified my foundation in technology and development. During the course, I deeply delved into the fundamentals of computing, information systems, and software development. Through it, I acquired crucial skills in system analysis, project management, and team collaboration, preparing me for the challenges of the digital world and enabling me to contribute significantly in the field of information technology.",
+  },
+  {
+    title: "English Language and Global Leadership",
+    institution: "New Jersey City University",
+    startDate: "2017",
+    endDate: "",
+    description:
+      "I participated in the Goiás Without Borders project, an initiative by the state of Goiás aimed at offering exchange programs for public high school students. During the exchange, I had the opportunity to improve my English and attend classes on global leadership taught by native English speakers. This experience was crucial for enhancing my communication and leadership skills, as well as providing a culturally enriching experience.",
+  },
+];
