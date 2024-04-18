@@ -9,8 +9,11 @@ interface ExperienceSectionProps {
 }
 
 const ExperienceSection = ({ experience }: ExperienceSectionProps) => {
-  const startDate = formatDate(experience.startDate);
-  const endDate = formatDate(experience.endDate);
+  const t = useTranslations("WorkSection");
+
+  const presentText = t("present");
+  const startDate = formatDate(experience.startDate, presentText);
+  const endDate = formatDate(experience.endDate, presentText);
 
   return (
     <div className="flex w-full space-x-4 py-4  max-[920px]:flex-col">
@@ -46,11 +49,9 @@ const ExperienceSection = ({ experience }: ExperienceSectionProps) => {
   );
 };
 
-const formatDate = (date: string | null) => {
+const formatDate = (date: string | null, text: string) => {
   if (!date) {
-    const t = useTranslations("WorkSection");
-
-    return t("present");
+    return text;
   }
   const [mes, ano] = date.split("/").map(Number);
   return format(new Date(ano, mes - 1), "MMM yyyy", {
