@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { IExperience } from "@/config/workExperience";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
+import { useTranslations } from "next-intl";
 
 interface ExperienceSectionProps {
   experience: IExperience;
@@ -47,7 +48,9 @@ const ExperienceSection = ({ experience }: ExperienceSectionProps) => {
 
 const formatDate = (date: string | null) => {
   if (!date) {
-    return "presente";
+    const t = useTranslations("WorkSection");
+
+    return t("present");
   }
   const [mes, ano] = date.split("/").map(Number);
   return format(new Date(ano, mes - 1), "MMM yyyy", {

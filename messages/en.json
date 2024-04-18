@@ -12,5 +12,9 @@
     "developer": "Developer",
     "have": "I have over",
     "description": "years of experience in the development field. I stand out for being practical, effective, and for learning everything very quickly. I am passionate about technology in general and always strive to keep myself updated."
+  },
+  "WorkSection": {
+    "experience": "Experience",
+    "present": "present"
   }
 }
