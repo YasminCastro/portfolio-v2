@@ -54,7 +54,7 @@ export function Project({ project }: Props) {
                 {project.description}
               </p>
               <Button variant="outline" className="w-fit">
-                <a href={project.repositorio} target="_blank">
+                <a href={project.repository} target="_blank">
                   Github
                 </a>
               </Button>

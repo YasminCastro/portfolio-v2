@@ -16,5 +16,8 @@
   "WorkSection": {
     "experience": "Experience",
     "present": "present"
+  },
+  "ProjectsSection": {
+    "projects": "Projects"
   }
 }
