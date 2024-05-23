@@ -14,7 +14,7 @@ export function ModeToggle() {
   }, []);
 
   return (
-    <a
+    <button
       className="cursor-pointer rounded-full bg-secondary p-3 max-lg:p-2"
       aria-label="Mudar tema da página"
       onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
@@ -25,6 +25,6 @@ export function ModeToggle() {
       {isClient && resolvedTheme === "dark" && (
         <FaMoon className="text-lg max-lg:text-base" />
       )}
-    </a>
+    </button>
   );
 }
