@@ -19,7 +19,7 @@ export function LanguageToggle({ side, sectionId }: IProps) {
   let locale = useLocale();
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
+      <DropdownMenuTrigger aria-label="Toggle language menu">
         <div className="rounded-full bg-secondary p-3 max-lg:p-2">
           <IoLanguage className="text-xl  max-lg:text-base " />
         </div>
