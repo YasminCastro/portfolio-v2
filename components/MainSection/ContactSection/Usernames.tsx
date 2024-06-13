@@ -1,7 +1,14 @@
+"use client";
+
 import { IoIosMail } from "react-icons/io";
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
+import { getCVPath } from "@/lib/utils";
+import { useLocale } from "next-intl";
 
 const Usernames = () => {
+  const locale = useLocale();
+  const cvPath = getCVPath(locale);
+
   return (
     <div className="flex min-h-full w-80 flex-col items-center justify-around rounded-xl bg-card p-7 max-lg:p-4 max-md:w-full">
       <div className="w-fit rounded-full bg-primary-foreground p-3 dark:bg-secondary max-lg:p-2">
@@ -40,7 +47,7 @@ const Usernames = () => {
 
           <a
             className="rounded-full bg-primary-foreground p-2 text-sm font-bold text-primary dark:bg-secondary"
-            href="/YasminCV-BR.pdf"
+            href={cvPath}
             target="_blank"
           >
             CV

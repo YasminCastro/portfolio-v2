@@ -8,14 +8,11 @@ import OtherSkills from "./OtherSkills/Skills";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { useLocale } from "next-intl";
+import { getCVPath } from "@/lib/utils";
 
 const LeftSidebar = () => {
   const locale = useLocale();
-  let cvPath = "/YasminCV-EN.pdf";
-
-  if (locale === "pt") {
-    cvPath = "/YasminCV-PT.pdf";
-  }
+  const cvPath = getCVPath(locale);
 
   return (
     <div className="p-4">

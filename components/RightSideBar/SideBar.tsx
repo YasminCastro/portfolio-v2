@@ -8,14 +8,12 @@ import {
 } from "react-icons/fa";
 import { ModeToggle } from "@/components/ModeToggle";
 import { useLocale } from "next-intl";
+import { getCVPath } from "@/lib/utils";
 
 const RightSidebar = () => {
   const locale = useLocale();
-  let cvPath = "/YasminCV-EN.pdf";
+  const cvPath = getCVPath(locale);
 
-  if (locale === "pt") {
-    cvPath = "/YasminCV-PT.pdf";
-  }
   return (
     <div className="flex h-screen flex-col items-center justify-center space-y-6 max-lg:space-y-5">
       <ModeToggle />
