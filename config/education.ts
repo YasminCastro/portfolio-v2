@@ -11,7 +11,7 @@ export const educationPT: IEducation[] = [
     institution: "Instituto Federal de Goiás",
     title: "Bacharelado em Sistemas de Informação",
     startDate: "2020",
-    endDate: "presente",
+    endDate: "2024",
     description:
       "O curso de Sistemas de Informação pelo IFG foi uma jornada enriquecedora que consolidou minha base em tecnologia e desenvolvimento. Durante o curso, mergulhei profundamente nos fundamentos da computação, sistemas de informação e desenvolvimento de software. Através dele, adquiri habilidades cruciais em análise de sistemas, gerenciamento de projetos e colaboração em equipe, me preparando para os desafios do mundo digital e me permitindo a contribuir de forma significativa na área de tecnologia da informação.",
   },
@@ -30,7 +30,7 @@ export const educationEN: IEducation[] = [
     institution: "Instituto Federal de Goiás",
     title: "Bachelor's Degree in Information Systems",
     startDate: "2020",
-    endDate: "present",
+    endDate: "2024",
     description:
       "The Information Systems course at IFG was an enriching journey that solidified my foundation in technology and development. During the course, I deeply delved into the fundamentals of computing, information systems, and software development. Through it, I acquired crucial skills in system analysis, project management, and team collaboration, preparing me for the challenges of the digital world and enabling me to contribute significantly in the field of information technology.",
   },
