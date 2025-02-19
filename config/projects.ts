@@ -56,6 +56,17 @@ export const projectsPT: IProjects[] = [
     link: null,
     repository: "https://github.com/YasminCastro/party-invite",
   },
+  {
+    title: "Maluca Awards",
+    summary:
+      "A nossa versão do VMA: votação, vencedores e uma festa para comemorar!",
+    images: ["/projects/maluca-awards/ma-1.png"],
+    thumbnail: "/projects/maluca-awards/ma-1.png",
+    description:
+      "O Maluca Awards foi um site desenvolvido em 2024 como uma paródia do VMA 2024, criado para um sistema de votação entre amigos. Os participantes faziam login e votavam em diversas categorias, escolhendo os vencedores. No final, organizamos uma festa para revelar os ganhadores e celebrar a brincadeira. O projeto foi uma experiência divertida e interativa, combinando tecnologia com entretenimento.",
+    link: "https://malucas-awards.vercel.app/",
+    repository: "https://github.com/YasminCastro/malucas-awards",
+  },
 ];
 
 export const projectsEN: IProjects[] = [
@@ -105,5 +116,16 @@ export const projectsEN: IProjects[] = [
       "Party Invite is a custom personal project from 2023 that transforms birthday invitations into a unique experience, allowing the host to create, send, and manage digital invitations and track RSVPs with a personal touch.",
     link: null,
     repository: "https://github.com/YasminCastro/party-invite",
+  },
+  {
+    title: "Maluca Awards",
+    summary:
+      "Our own version of the VMA: voting, winners, and a party to celebrate!",
+    images: ["/projects/maluca-awards/ma-1.png"],
+    thumbnail: "/projects/maluca-awards/ma-1.png",
+    description:
+      "Maluca Awards was a website developed in 2024 as a parody of the VMA 2024, created as a voting system among friends. Participants logged in and voted in various categories to choose the winners. In the end, we organized a party to reveal the winners and celebrate the fun. The project was a fun and interactive experience, combining technology with entertainment.",
+    link: "https://malucas-awards.vercel.app/",
+    repository: "https://github.com/YasminCastro/malucas-awards",
   },
 ];
