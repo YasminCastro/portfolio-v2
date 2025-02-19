@@ -67,6 +67,22 @@ export const projectsPT: IProjects[] = [
     link: "https://malucas-awards.vercel.app/",
     repository: "https://github.com/YasminCastro/malucas-awards",
   },
+  {
+    title: "Dairy Dashboard",
+    summary: "Dashboard interativo para análise de dados na pecuária leiteira.",
+    images: [
+      "/projects/dairy-dashboard/dd-1.png",
+      "/projects/dairy-dashboard/dd-2.png",
+      "/projects/dairy-dashboard/dd-3.png",
+      "/projects/dairy-dashboard/dd-4.png",
+      "/projects/dairy-dashboard/dd-5.png",
+    ],
+    thumbnail: "/projects/dairy-dashboard/dd-1.png",
+    description:
+      "O Dairy Dashboard é uma interface gráfica desenvolvida para visualização e análise de dados no setor de pecuária leiteira. Criado utilizando React, Next.js e Tailwind CSS, o projeto é desenvolvido em parceria com o professor Eduardo Noronha, referência na área de análise de dados. O foco está na criação de componentes reutilizáveis e na otimização da experiência do usuário, tornando a análise de dados mais acessível e eficiente para os usuários do sistema.",
+    link: "",
+    repository: "",
+  },
 ];
 
 export const projectsEN: IProjects[] = [
@@ -127,5 +143,15 @@ export const projectsEN: IProjects[] = [
       "Maluca Awards was a website developed in 2024 as a parody of the VMA 2024, created as a voting system among friends. Participants logged in and voted in various categories to choose the winners. In the end, we organized a party to reveal the winners and celebrate the fun. The project was a fun and interactive experience, combining technology with entertainment.",
     link: "https://malucas-awards.vercel.app/",
     repository: "https://github.com/YasminCastro/malucas-awards",
+  },
+  {
+    title: "Dairy Dashboard",
+    summary: "An interactive dashboard for dairy farming data analysis.",
+    images: ["/projects/dairy-dashboard/dd-1.png"],
+    thumbnail: "/projects/dairy-dashboard/dd-1.png",
+    description:
+      "Dairy Dashboard is a graphical interface developed for data visualization and analysis in the dairy farming sector. Built using React, Next.js, and Tailwind CSS, the project is developed in collaboration with Professor Eduardo Noronha, a renowned expert in data analysis. The focus is on creating reusable components and optimizing the user experience to make data analysis more accessible and efficient for system users.",
+    link: null,
+    repository: "",
   },
 ];
